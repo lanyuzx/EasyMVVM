@@ -20,9 +20,7 @@ static NSString * const jsonUrl = @"http://new.api.bandu.cn/book/listofgrade?gra
     [manager GET:jsonUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self parsingWithJSON:responseObject parsingBlock:^(BOOL isSucess, id  _Nullable result) {
             if (!isSucess) {
-                if (sucessBlock) {
-                    sucessBlock(false);
-                }
+                sucessBlock(false);
                 return ;
             }
             NSArray * list = [ViewControllerModel LLMJParse:result[@"list"]];
@@ -31,15 +29,13 @@ static NSString * const jsonUrl = @"http://new.api.bandu.cn/book/listofgrade?gra
             }else {
                 [self.dataList addObjectsFromArray:list];
             }
-            if (sucessBlock) {
                 sucessBlock(true);
-            }
+            
         }];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (sucessBlock) {
             sucessBlock(false);
-        }
+        
     }];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

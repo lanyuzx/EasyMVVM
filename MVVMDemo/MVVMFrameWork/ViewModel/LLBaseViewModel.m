@@ -17,7 +17,6 @@
     if (self) {
         self.viewController = viewController;
         self.pageIndex = 1;
-        [self requestWithURL:nil];
     }
     return self;
 }
