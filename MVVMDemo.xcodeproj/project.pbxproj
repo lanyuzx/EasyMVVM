@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A014941F2298E1A500138D6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A014941E2298E1A500138D6D /* AppDelegate.m */; };
-		A01494222298E1A500138D6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01494212298E1A500138D6D /* ViewController.m */; };
 		A01494252298E1A500138D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01494232298E1A500138D6D /* Main.storyboard */; };
 		A01494272298E1A600138D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01494262298E1A600138D6D /* Assets.xcassets */; };
 		A014942A2298E1A600138D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01494282298E1A600138D6D /* LaunchScreen.storyboard */; };
@@ -19,6 +18,10 @@
 		A014945C2298E1D000138D6D /* LLBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A01494552298E1D000138D6D /* LLBaseVC.m */; };
 		A014945D2298E1D000138D6D /* LLBaseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A01494562298E1D000138D6D /* LLBaseTableViewVC.m */; };
 		A014945E2298E1D000138D6D /* LLBaseCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A014945A2298E1D000138D6D /* LLBaseCustomView.m */; };
+		A034EFA4229A32AB009879C9 /* ViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A034EF9A229A32AA009879C9 /* ViewControllerViewModel.m */; };
+		A034EFA5229A32AB009879C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A034EF9C229A32AA009879C9 /* ViewController.m */; };
+		A034EFA6229A32AB009879C9 /* ViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A034EF9F229A32AA009879C9 /* ViewControllerModel.m */; };
+		A034EFA7229A32AB009879C9 /* ViewControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A034EFA3229A32AA009879C9 /* ViewControllerView.m */; };
 		A0E48BFB2298E7410042BC6E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48BE32298E7410042BC6E /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		A0E48BFC2298E7410042BC6E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48BEC2298E7410042BC6E /* ViewController+MASAdditions.m */; };
 		A0E48BFD2298E7410042BC6E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48BF02298E7410042BC6E /* MASCompositeConstraint.m */; };
@@ -61,9 +64,6 @@
 		A0E48C672298E7540042BC6E /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C5D2298E7540042BC6E /* MJFoundation.m */; };
 		A0E48C6B2298E7970042BC6E /* NSObject+LLMJParse.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C6A2298E7970042BC6E /* NSObject+LLMJParse.m */; };
 		A0E48C6E2298E8F70042BC6E /* LLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C6D2298E8F70042BC6E /* LLBaseModel.m */; };
-		A0E48C72229980CD0042BC6E /* ViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C71229980CD0042BC6E /* ViewControllerViewModel.m */; };
-		A0E48C75229980DE0042BC6E /* ViewControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C74229980DE0042BC6E /* ViewControllerView.m */; };
-		A0E48C78229980F20042BC6E /* ViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C77229980F20042BC6E /* ViewControllerModel.m */; };
 		A0E48C87229981370042BC6E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C7E229981370042BC6E /* AFURLResponseSerialization.m */; };
 		A0E48C88229981370042BC6E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C7F229981370042BC6E /* AFHTTPSessionManager.m */; };
 		A0E48C89229981370042BC6E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E48C81229981370042BC6E /* AFURLSessionManager.m */; };
@@ -119,8 +119,6 @@
 		A014941A2298E1A500138D6D /* MVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A014941D2298E1A500138D6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A014941E2298E1A500138D6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A01494202298E1A500138D6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A01494212298E1A500138D6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A01494242298E1A500138D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A01494262298E1A600138D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A01494292298E1A600138D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,6 +138,14 @@
 		A01494572298E1D000138D6D /* LLBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLBaseVC.h; sourceTree = "<group>"; };
 		A01494592298E1D000138D6D /* LLBaseCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLBaseCustomView.h; sourceTree = "<group>"; };
 		A014945A2298E1D000138D6D /* LLBaseCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLBaseCustomView.m; sourceTree = "<group>"; };
+		A034EF99229A32AA009879C9 /* ViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerViewModel.h; sourceTree = "<group>"; };
+		A034EF9A229A32AA009879C9 /* ViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerViewModel.m; sourceTree = "<group>"; };
+		A034EF9C229A32AA009879C9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A034EF9D229A32AA009879C9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A034EF9F229A32AA009879C9 /* ViewControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerModel.m; sourceTree = "<group>"; };
+		A034EFA0229A32AA009879C9 /* ViewControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerModel.h; sourceTree = "<group>"; };
+		A034EFA2229A32AA009879C9 /* ViewControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerView.h; sourceTree = "<group>"; };
+		A034EFA3229A32AA009879C9 /* ViewControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerView.m; sourceTree = "<group>"; };
 		A0E48BE22298E7410042BC6E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		A0E48BE32298E7410042BC6E /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		A0E48BE42298E7410042BC6E /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -231,12 +237,6 @@
 		A0E48C6C2298E8F70042BC6E /* LLBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLBaseModel.h; sourceTree = "<group>"; };
 		A0E48C6D2298E8F70042BC6E /* LLBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLBaseModel.m; sourceTree = "<group>"; };
 		A0E48C6F22997FB50042BC6E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		A0E48C70229980CD0042BC6E /* ViewControllerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerViewModel.h; sourceTree = "<group>"; };
-		A0E48C71229980CD0042BC6E /* ViewControllerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerViewModel.m; sourceTree = "<group>"; };
-		A0E48C73229980DE0042BC6E /* ViewControllerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerView.h; sourceTree = "<group>"; };
-		A0E48C74229980DE0042BC6E /* ViewControllerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerView.m; sourceTree = "<group>"; };
-		A0E48C76229980F20042BC6E /* ViewControllerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerModel.h; sourceTree = "<group>"; };
-		A0E48C77229980F20042BC6E /* ViewControllerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerModel.m; sourceTree = "<group>"; };
 		A0E48C7A229981370042BC6E /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
 		A0E48C7B229981370042BC6E /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		A0E48C7C229981370042BC6E /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
@@ -355,14 +355,7 @@
 			children = (
 				A014941D2298E1A500138D6D /* AppDelegate.h */,
 				A014941E2298E1A500138D6D /* AppDelegate.m */,
-				A01494202298E1A500138D6D /* ViewController.h */,
-				A01494212298E1A500138D6D /* ViewController.m */,
-				A0E48C70229980CD0042BC6E /* ViewControllerViewModel.h */,
-				A0E48C71229980CD0042BC6E /* ViewControllerViewModel.m */,
-				A0E48C73229980DE0042BC6E /* ViewControllerView.h */,
-				A0E48C74229980DE0042BC6E /* ViewControllerView.m */,
-				A0E48C76229980F20042BC6E /* ViewControllerModel.h */,
-				A0E48C77229980F20042BC6E /* ViewControllerModel.m */,
+				A034EF97229A32AA009879C9 /* Home */,
 				A0E48BE02298E7350042BC6E /* FrameWork */,
 				A014944F2298E1D000138D6D /* MVVMFrameWork */,
 				A01494232298E1A500138D6D /* Main.storyboard */,
@@ -441,6 +434,53 @@
 				A0E48C6D2298E8F70042BC6E /* LLBaseModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A034EF97229A32AA009879C9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A034EF98229A32AA009879C9 /* ViewModel */,
+				A034EF9B229A32AA009879C9 /* Controller */,
+				A034EF9E229A32AA009879C9 /* Model */,
+				A034EFA1229A32AA009879C9 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A034EF98229A32AA009879C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A034EF99229A32AA009879C9 /* ViewControllerViewModel.h */,
+				A034EF9A229A32AA009879C9 /* ViewControllerViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A034EF9B229A32AA009879C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A034EF9C229A32AA009879C9 /* ViewController.m */,
+				A034EF9D229A32AA009879C9 /* ViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A034EF9E229A32AA009879C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A034EF9F229A32AA009879C9 /* ViewControllerModel.m */,
+				A034EFA0229A32AA009879C9 /* ViewControllerModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A034EFA1229A32AA009879C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A034EFA2229A32AA009879C9 /* ViewControllerView.h */,
+				A034EFA3229A32AA009879C9 /* ViewControllerView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A0E48BE02298E7350042BC6E /* FrameWork */ = {
@@ -832,7 +872,6 @@
 			files = (
 				A014945E2298E1D000138D6D /* LLBaseCustomView.m in Sources */,
 				A0E48CC7229992F90042BC6E /* SDWebImageCodersManager.m in Sources */,
-				A0E48C75229980DE0042BC6E /* ViewControllerView.m in Sources */,
 				A0E48C432298E74C0042BC6E /* MJRefreshFooter.m in Sources */,
 				A0E48CC5229992F90042BC6E /* SDWebImageFrame.m in Sources */,
 				A0E48C3E2298E74C0042BC6E /* MJRefreshAutoGifFooter.m in Sources */,
@@ -843,8 +882,8 @@
 				A0E48C8A229981370042BC6E /* AFURLRequestSerialization.m in Sources */,
 				A0E48CD5229992F90042BC6E /* UIImageView+WebCache.m in Sources */,
 				A0E48CD9229992F90042BC6E /* UIView+WebCacheOperation.m in Sources */,
-				A01494222298E1A500138D6D /* ViewController.m in Sources */,
 				A0E48C642298E7540042BC6E /* NSObject+MJClass.m in Sources */,
+				A034EFA7229A32AB009879C9 /* ViewControllerView.m in Sources */,
 				A0E48C002298E7410042BC6E /* NSArray+MASAdditions.m in Sources */,
 				A0E48C672298E7540042BC6E /* MJFoundation.m in Sources */,
 				A0E48CD6229992F90042BC6E /* NSImage+WebCache.m in Sources */,
@@ -864,7 +903,9 @@
 				A0E48C402298E74C0042BC6E /* MJRefreshNormalHeader.m in Sources */,
 				A0E48CDA229992F90042BC6E /* UIView+WebCache.m in Sources */,
 				A0E48C452298E74C0042BC6E /* MJRefreshBackFooter.m in Sources */,
+				A034EFA5229A32AB009879C9 /* ViewController.m in Sources */,
 				A014945C2298E1D000138D6D /* LLBaseVC.m in Sources */,
+				A034EFA6229A32AB009879C9 /* ViewControllerModel.m in Sources */,
 				A0E48C042298E7410042BC6E /* MASViewAttribute.m in Sources */,
 				A0E48C5E2298E7540042BC6E /* MJPropertyType.m in Sources */,
 				A0E48C462298E74C0042BC6E /* MJRefreshAutoFooter.m in Sources */,
@@ -873,9 +914,9 @@
 				A0E48CD8229992F90042BC6E /* SDImageCacheConfig.m in Sources */,
 				A0E48C622298E7540042BC6E /* MJExtensionConst.m in Sources */,
 				A014942D2298E1A600138D6D /* main.m in Sources */,
+				A034EFA4229A32AB009879C9 /* ViewControllerViewModel.m in Sources */,
 				A0E48C392298E74C0042BC6E /* UIView+MJExtension.m in Sources */,
 				A0E48C5F2298E7540042BC6E /* NSObject+MJKeyValue.m in Sources */,
-				A0E48C78229980F20042BC6E /* ViewControllerModel.m in Sources */,
 				A0E48CD0229992F90042BC6E /* SDAnimatedImageRep.m in Sources */,
 				A0E48BFF2298E7410042BC6E /* MASLayoutConstraint.m in Sources */,
 				A0E48CC6229992F90042BC6E /* UIImage+ForceDecode.m in Sources */,
@@ -890,7 +931,6 @@
 				A0E48C8B229981370042BC6E /* AFNetworkReachabilityManager.m in Sources */,
 				A0E48BFC2298E7410042BC6E /* ViewController+MASAdditions.m in Sources */,
 				A014941F2298E1A500138D6D /* AppDelegate.m in Sources */,
-				A0E48C72229980CD0042BC6E /* ViewControllerViewModel.m in Sources */,
 				A0E48CCC229992F90042BC6E /* SDWebImageCompat.m in Sources */,
 				A0E48C88229981370042BC6E /* AFHTTPSessionManager.m in Sources */,
 				A0E48CD1229992F90042BC6E /* SDImageCache.m in Sources */,
