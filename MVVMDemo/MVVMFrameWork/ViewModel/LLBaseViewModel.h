@@ -16,7 +16,6 @@ typedef void(^sucessBlock)(BOOL isSucess);
 
 @property(nonatomic ,strong)UIViewController * viewController;
 
-@property(nonatomic,strong) NSMutableArray *dataList;
 /**
  分页索引
  */

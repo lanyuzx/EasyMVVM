@@ -459,8 +459,8 @@
 		A034EF9B229A32AA009879C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A034EF9C229A32AA009879C9 /* ViewController.m */,
 				A034EF9D229A32AA009879C9 /* ViewController.h */,
+				A034EF9C229A32AA009879C9 /* ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1129,6 +1129,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MVVMDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1149,6 +1150,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MVVMDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -18,6 +18,15 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)tableViewRegistClassView;
 
 
+/**
+ 添加上拉刷新
+ */
+-(void)addMJRefreshHeader ;
+
+/**
+ 添加下拉加载
+ */
+-(void)addMJRefreshFooter;
 
 /**
  此方法是单纯的试图

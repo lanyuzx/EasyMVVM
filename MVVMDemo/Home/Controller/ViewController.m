@@ -18,19 +18,18 @@
 -(void)setupViemModel {
     [super setupViemModel];
     self.viewModel = [[ViewControllerViewModel alloc] initWithVC:self];
+    self.customView = [[ViewControllerView alloc] initWithFrame:CGRectZero viewController:self tableView:self.tableView];
 }
 -(void)setupUI {
     [super setupUI];
     self.title = @"MVVM custom view";
-    self.customView = [[ViewControllerView alloc] initWithFrame:CGRectZero viewController:self tableView:self.tableView];
     [self.view addSubview:self.customView];
     [self.customView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.view);
         make.top.equalTo(self.mas_topLayoutGuide);
         make.bottom.equalTo(self.mas_bottomLayoutGuide);
     }];
-    [self addMJRefreshFooter];
-    [self addMJRefreshHeader];
+   
 }
 -(void)setupData {
     [super setupData];

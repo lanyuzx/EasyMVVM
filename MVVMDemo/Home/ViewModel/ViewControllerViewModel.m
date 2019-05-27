@@ -10,6 +10,9 @@
 #import "ViewControllerModel.h"
 #import "ViewControllerView.h"
 #import "ViewController.h"
+@interface ViewControllerViewModel()
+@property(nonatomic ,strong)NSMutableArray <ViewControllerModel *> * dataList;
+@end
 @implementation ViewControllerViewModel
 static NSString * const jsonUrl = @"http://new.api.bandu.cn/book/listofgrade?grade_id=2/";
 -(void)requestWithURL:(sucessBlock)sucessBlock {

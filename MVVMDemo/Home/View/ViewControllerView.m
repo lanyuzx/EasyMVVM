@@ -30,6 +30,9 @@
         make.bottom.equalTo(self);
     }];
     
+    [self addMJRefreshFooter];
+    [self addMJRefreshHeader];
+    
 }
 
 -(void)tableViewRegistClassView {

@@ -9,31 +9,35 @@
 #import "LLBaseTableViewVC.h"
 #import "MJRefresh.h"
 @interface LLBaseTableViewVC ()
-
+@property(nonatomic ,assign)UITableViewStyle  tableViewStyle;
 @end
 
 @implementation LLBaseTableViewVC
+
+- (instancetype)initWithTableViewStyle:(UITableViewStyle)style
+{
+    self = [super init];
+    if (self) {
+        self.tableViewStyle = style;
+    }
+    return self;
+}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                       reason:[NSString stringWithFormat:@"You must override %@ in %@", NSStringFromSelector(_cmd), self.class]
+                                     userInfo:nil];
+    }
+    return self;
+}
 
 -(void)setupUI {
     [super setupUI];
     //tabView的布局不在这里添加 交给实现的子类处理
 }
 
--(void)addMJRefreshHeader {
-    __block typeof(self) weakSelf = self;
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        weakSelf.viewModel.pageIndex = 1;
-        [weakSelf setupData];
-    }];
-    
-}
--(void)addMJRefreshFooter {
-    __block typeof(self) weakSelf = self;
-    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        weakSelf.viewModel.pageIndex ++;
-        [weakSelf setupData];
-    }];
-}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [self.viewModel numberOfSectionsInTableView:tableView] ? [self.viewModel numberOfSectionsInTableView:tableView] : 1 ;
 }

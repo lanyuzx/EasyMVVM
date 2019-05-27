@@ -10,7 +10,16 @@
 #import "LLBaseModel.h"
 
 @implementation LLBaseViewModel
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                       reason:[NSString stringWithFormat:@"You must override %@ in %@", NSStringFromSelector(@selector(initWithVC:)), self.class]
+                                     userInfo:nil];
+    }
+    return self;
+}
 - (instancetype)initWithVC:(UIViewController *)viewController
 {
     self = [super init];
