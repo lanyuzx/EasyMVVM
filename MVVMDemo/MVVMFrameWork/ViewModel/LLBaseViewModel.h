@@ -10,11 +10,12 @@
 #import "NSObject+LLMJParse.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^sucessBlock)(BOOL isSucess);
+@class LLBaseVC;
 @interface LLBaseViewModel : NSObject
 //公有构造方法
-- (instancetype)initWithVC:(UIViewController *)viewController;
+- (instancetype)initWithVC:(LLBaseVC *)viewController;
 
-@property(nonatomic ,strong)UIViewController * viewController;
+@property(nonatomic ,weak)LLBaseVC * viewController;
 
 /**
  分页索引
